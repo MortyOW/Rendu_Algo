@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeu de Nim</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <script type="text/javascript" src="NimJeu.js" defer></script>
+  <div id="entete"></div>
+
+      <h5 id="joueur"></h5>
+      <div id="allumImg">
+        Pour commencer, choisissez un nombre d'allumettes :
+      </div>
+      
+      <p id="pfeu">
+        <table>
+          <tr id="trfeu">
+            <td><img src="img/start.png" alt="flamme"/></td>
+          </tr>
+        </table>
+      </p>
+
+      <div id="initialisation">
+        <button type="button" onclick="Game('trfeu','allumImg','nb')">Lancer</button>
+        <label> le jeu avec</label>
+        <input type="text" id="nb" name="nb" size="5" value=""/>
+        <label>allumette(s)</label>
+        <span id="error1"></span>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  </footer>
+</body>
+
+</html>
